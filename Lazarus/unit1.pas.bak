@@ -194,7 +194,7 @@ begin
      Memo4.Lines.AddStrings(Memo2.Lines);
   end;
   for i:=0 to Memo4.Lines.Count-1 do begin
-    Memo4.Lines[i]:=UTF8ToCP1252(Memo4.Lines[i]);
+    Memo4.Lines[i]:=UTF8ToISO_8859_1(Memo4.Lines[i]);
   end;
 
   //Brennen
