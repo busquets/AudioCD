@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 480
+  Left = 249
   Height = 300
-  Top = 372
+  Top = 266
   Width = 320
   BorderIcons = []
   BorderStyle = bsDialog
@@ -102,18 +102,18 @@ object Form2: TForm2
   end
   object GroupBox1: TGroupBox
     Left = 16
-    Height = 84
+    Height = 80
     Top = 160
     Width = 288
     Caption = 'CD Brenner'
-    ClientHeight = 67
+    ClientHeight = 63
     ClientWidth = 284
     TabOrder = 4
     object ComboBox1: TComboBox
       Left = 6
       Height = 25
       Top = 17
-      Width = 200
+      Width = 271
       ItemHeight = 0
       Style = csDropDownList
       TabOrder = 0
@@ -383,6 +383,7 @@ object Form2: TForm2
       Layout = blGlyphTop
       OnClick = BitBtn1Click
       TabOrder = 1
+      Visible = False
     end
   end
   object Process1: TProcess

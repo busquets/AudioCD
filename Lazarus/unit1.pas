@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs,
-  StdCtrls, ComCtrls, Buttons, ExtCtrls, process, math, LCLIntf, LConvEncoding, unit2;
+  StdCtrls, ComCtrls, Buttons, ExtCtrls, process, math, LCLIntf, LConvEncoding, unit2, unit3;
 
 type
 
@@ -18,6 +18,7 @@ type
     BitBtn3: TBitBtn;
     BitBtn4: TBitBtn;
     BitBtn5: TBitBtn;
+    BitBtn6: TBitBtn;
     Image1: TImage;
     ListView1: TListView;
     Memo1: TMemo;
@@ -38,6 +39,7 @@ type
     procedure BitBtn3Click(Sender: TObject);
     procedure BitBtn4Click(Sender: TObject);
     procedure BitBtn5Click(Sender: TObject);
+    procedure BitBtn6Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
@@ -209,6 +211,23 @@ begin
   end;
  end
  else ShowMessage('Zusammenstellung ist leer!');
+end;
+
+procedure TForm1.BitBtn6Click(Sender: TObject);
+var i:Integer;
+begin
+  Form3.tracktitel:=TStringList.Create;
+  Form3.trackdauer:=TStringList.Create;
+  Form3.PRLabel1.Caption:=titel;
+  for i:=0 to ListView1.Items.Count-1 do begin
+     Form3.tracktitel.Append(Listview1.Items[i].Caption);
+     Form3.trackdauer.Append(Listview1.Items[i].SubItems[1]);
+  end;
+  if Form3.tracktitel.Count > 10 then Form3.PRGridPanel1.RowCount:=Form3.tracktitel.Count
+  else Form3.PRGridPanel1.RowCount:=10;
+  Form3.Button1Click(nil);
+  Form3.tracktitel.Free;
+  Form3.trackdauer.Free;
 end;
 
 

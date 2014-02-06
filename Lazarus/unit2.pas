@@ -58,7 +58,6 @@ procedure TForm2.CheckBox1Change(Sender: TObject);
 begin
  if Edit1.Enabled then Edit1.Enabled:=false
  else Edit1.Enabled:=true;
-
 end;
 
 procedure TForm2.BitBtn1Click(Sender: TObject);
