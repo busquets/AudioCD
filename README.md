@@ -6,4 +6,4 @@ Audio-CD is a simple frontend for cdrdao.
    * channels can be selected
    * covers can be created.
 
-It's only testet on 64bit Debian.
+deb File is for 64bit Debian.
