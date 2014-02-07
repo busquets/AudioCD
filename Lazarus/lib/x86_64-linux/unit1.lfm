@@ -90,8 +90,10 @@ object Form1: TForm1
       Left = 6
       Height = 64
       Top = 8
-      Width = 162
+      Width = 158
       Caption = 'Projekt leeren'
+      Font.Height = -13
+      Font.Name = 'Sans'
       Glyph.Data = {
         7E120000424D7E1200000000000036000000280000001E000000270000000100
         2000000000004812000064000000640000000000000000000000000000000000
@@ -244,13 +246,14 @@ object Form1: TForm1
         2B2F
       }
       OnClick = BitBtn1Click
+      ParentFont = False
       TabOrder = 0
     end
     object BitBtn2: TBitBtn
-      Left = 332
+      Left = 324
       Height = 64
       Top = 8
-      Width = 162
+      Width = 170
       Caption = 'Projekt speichern'
       Glyph.Data = {
         AE0F0000424DAE0F00000000000036000000280000001E000000210000000100
@@ -384,10 +387,10 @@ object Form1: TForm1
       TabOrder = 1
     end
     object BitBtn3: TBitBtn
-      Left = 169
+      Left = 167
       Height = 64
       Top = 8
-      Width = 162
+      Width = 154
       Caption = 'Projekt laden'
       Glyph.Data = {
         DA1F0000424DDA1F00000000000036000000280000002D0000002D0000000100

@@ -285,7 +285,7 @@ end;
 procedure TForm1.FormDropFiles(Sender: TObject; const FileNames: array of String
   );
 var dateiname,endung:String; i:Integer; minuten,sekunden:Single;
-    output:TStrings;                  sminuten,ssekunden:String;
+    output:TStrings;
 begin
   output:=TStringList.Create;
   ListView1.SortColumn:=-1;
@@ -309,11 +309,7 @@ begin
     gesamtsekunden:=gesamtsekunden+sekunden;
     minuten:=sekunden/60;
     sekunden:=(minuten-Floor(minuten))*60;
-    if minuten<10 then sminuten:='0' + IntToStr(Floor(minuten))
-    else sminuten:= IntToStr(Floor(minuten));
-    if sekunden<10 then ssekunden:='0' + IntToStr(Floor(sekunden))
-    else ssekunden:= IntToStr(Floor(sekunden));
-    ListView1.Items.Item[ListView1.Items.Count-1].SubItems.Append(sminuten+':'+ssekunden);
+    ListView1.Items.Item[ListView1.Items.Count-1].SubItems.Append(IntToStr(Floor(minuten))+':'+IntToStr(Floor(sekunden)));
     ListView1.Items.Item[ListView1.Items.Count-1].SubItems.Append(output[0]);
     ListView1.Items.Item[ListView1.Items.Count-1].SubItems.Append('leer');
     except
