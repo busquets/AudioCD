@@ -1,10 +1,10 @@
 # Audio-CD
 
 Audio-CD is a simple (gtk) frontend for cdrdao.
-   * burn audio CDs with cd-text.
-   * normalize Audio
-   * channels can be selected
-   * covers can be created.
+   * burn audio CDs with cd-text
+   * Audio normalization 
+   * channels selection
+   * cover creator
 
 deb File is for 64bit Debian.
 
