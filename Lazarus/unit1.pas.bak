@@ -134,7 +134,7 @@ begin
             ListView1.Items.Item[ListView1.Items.Count-1].SubItems.Append(output[0]);
             ListView1.Items.Item[ListView1.Items.Count-1].SubItems.Append('leer');
           except
-             ShowMessage('Keine unterstützte Audiodatei!');
+            ShowMessage('soxi gibt keine gültige Länge der Audiodatei zurück!');
              ListView1.Items.Item[ListView1.Items.Count-1].Delete;
           end;
           output.Clear;
@@ -309,7 +309,7 @@ begin
     ListView1.Items.Item[ListView1.Items.Count-1].SubItems.Append(output[0]);
     ListView1.Items.Item[ListView1.Items.Count-1].SubItems.Append('leer');
     except
-       ShowMessage('Keine unterstützte Audiodatei!');
+       ShowMessage('soxi gibt keine gültige Länge der Audiodatei zurück!');
        ListView1.Items.Item[ListView1.Items.Count-1].Delete;
     end;
     output.Clear;

@@ -42,10 +42,10 @@ object Form3: TForm3
         RowCount = 10
         BeforePrintChild = PRGridPanel1BeforePrintChild
         object PRLabel2: TPRLabel
-          Left = 40
+          Left = 30
           Height = 20
           Top = 0
-          Width = 204
+          Width = 220
           FontName = fnArial
           FontSize = 10
           FontBold = True
@@ -67,7 +67,7 @@ object Form3: TForm3
         end
         object PRLabel4: TPRLabel
           Left = 0
-          Height = 22
+          Height = 18
           Top = 0
           Width = 20
           FontName = fnFixedWidth
@@ -75,7 +75,16 @@ object Form3: TForm3
           CharSpace = 0
           WordSpace = 0
           Caption = 'PRLabel4'
-          Alignment = taRightJustify
+          Alignment = taCenter
+        end
+        object PRRect2: TPRRect
+          Left = 3
+          Height = 12
+          Top = 0
+          Width = 15
+          LineWidth = 0
+          LineStyle = psSolid
+          Radius = 0
         end
       end
       object PRRect1: TPRRect

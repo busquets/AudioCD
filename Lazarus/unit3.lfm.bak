@@ -42,7 +42,7 @@ object Form3: TForm3
         RowCount = 10
         BeforePrintChild = PRGridPanel1BeforePrintChild
         object PRLabel2: TPRLabel
-          Left = 30
+          Left = 28
           Height = 20
           Top = 0
           Width = 220
